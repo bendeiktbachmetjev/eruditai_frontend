@@ -17,3 +17,18 @@ This file contains sensitive API keys and credentials. If you accidentally commi
 2. Rotate your API keys in Firebase Console
 3. Update the keys in your local `GoogleService-Info.plist` file
 
+## ⚠️ URGENT: Rotate Your API Keys
+
+**The original `GoogleService-Info.plist` file with real API keys was previously committed to this repository.**
+
+**You MUST:**
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Navigate to your project settings
+3. **Generate new API keys** for:
+   - Firebase API Key
+   - Google OAuth Client ID
+4. Download a new `GoogleService-Info.plist` file
+5. Replace your local `GoogleService-Info.plist` with the new one
+
+The old keys are exposed in git history and should be considered compromised.
+
