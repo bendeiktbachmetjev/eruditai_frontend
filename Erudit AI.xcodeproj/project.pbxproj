@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E55776BB2EBA6FC4007AD72D /* EPUBKit in Frameworks */ = {isa = PBXBuildFile; productRef = E55776BA2EBA6FC4007AD72D /* EPUBKit */; };
+		E5AFB5A92EAE8168006C02A6 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = E5D109752EA38900008194AA /* ZIPFoundation */; };
+		E5B82AB72EA37CD300562498 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E5B82AB62EA37CD300562498 /* FirebaseAuth */; };
+		E5B82AB92EA37CD300562498 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E5B82AB82EA37CD300562498 /* FirebaseCore */; };
+		E5B82ABB2EA37CD300562498 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E5B82ABA2EA37CD300562498 /* FirebaseFirestore */; };
+		E5D1096F2EA387A2008194AA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E5D1096E2EA387A2008194AA /* GoogleSignIn */; };
+		E5D109712EA387A2008194AA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5D109702EA387A2008194AA /* GoogleSignInSwift */; };
+		E5D109732EA3883A008194AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5D109722EA3883A008194AA /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E5B82A8F2EA375CA00562498 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +38,7 @@
 		E5B82A812EA375C800562498 /* Erudit AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Erudit AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B82A8E2EA375CA00562498 /* Erudit AITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Erudit AITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B82A982EA375CA00562498 /* Erudit AIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Erudit AIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D109722EA3883A008194AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +64,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AFB5A92EAE8168006C02A6 /* ZIPFoundation in Frameworks */,
+				E5D109712EA387A2008194AA /* GoogleSignInSwift in Frameworks */,
+				E55776BB2EBA6FC4007AD72D /* EPUBKit in Frameworks */,
+				E5B82AB92EA37CD300562498 /* FirebaseCore in Frameworks */,
+				E5D1096F2EA387A2008194AA /* GoogleSignIn in Frameworks */,
+				E5B82AB72EA37CD300562498 /* FirebaseAuth in Frameworks */,
+				E5B82ABB2EA37CD300562498 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +98,7 @@
 				E5B82A912EA375CA00562498 /* Erudit AITests */,
 				E5B82A9B2EA375CA00562498 /* Erudit AIUITests */,
 				E5B82A822EA375C800562498 /* Products */,
+				E5D109722EA3883A008194AA /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +132,13 @@
 			);
 			name = "Erudit AI";
 			packageProductDependencies = (
+				E5B82AB62EA37CD300562498 /* FirebaseAuth */,
+				E5B82AB82EA37CD300562498 /* FirebaseCore */,
+				E5B82ABA2EA37CD300562498 /* FirebaseFirestore */,
+				E5D1096E2EA387A2008194AA /* GoogleSignIn */,
+				E5D109702EA387A2008194AA /* GoogleSignInSwift */,
+				E5D109752EA38900008194AA /* ZIPFoundation */,
+				E55776BA2EBA6FC4007AD72D /* EPUBKit */,
 			);
 			productName = "Erudit AI";
 			productReference = E5B82A812EA375C800562498 /* Erudit AI.app */;
@@ -195,6 +222,12 @@
 			);
 			mainGroup = E5B82A782EA375C800562498;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E5B82AB52EA37C5500562498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E5D1096D2EA387A2008194AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				E5D109742EA38900008194AA /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				E55776B92EBA6FC4007AD72D /* XCRemoteSwiftPackageReference "EPUBKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E5B82A822EA375C800562498 /* Products */;
 			projectDirPath = "";
@@ -212,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D109732EA3883A008194AA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,15 +427,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "Erudit AI/Erudit AI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LY5C7J483K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Erudit-AI-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Erudit AI";
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n    {\n        CFBundleURLName = \"GoogleSignIn\";\n        CFBundleURLSchemes = (\n            \"com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk\"\n        );\n    }\n)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_com_apple_developer_applesignin = Default;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,15 +465,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "Erudit AI/Erudit AI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LY5C7J483K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Erudit-AI-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Erudit AI";
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n    {\n        CFBundleURLName = \"GoogleSignIn\";\n        CFBundleURLSchemes = (\n            \"com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk\"\n        );\n    }\n)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_com_apple_developer_applesignin = Default;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n    {\n        CFBundleURLName = \"GoogleSignIn\";\n        CFBundleURLSchemes = (\n            \"com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk\"\n        );\n    }\n)";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benedikt.Erudit-AITests";
@@ -478,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n    {\n        CFBundleURLName = \"GoogleSignIn\";\n        CFBundleURLSchemes = (\n            \"com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk\"\n        );\n    }\n)";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benedikt.Erudit-AITests";
@@ -498,6 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n    {\n        CFBundleURLName = \"GoogleSignIn\";\n        CFBundleURLSchemes = (\n            \"com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk\"\n        );\n    }\n)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benedikt.Erudit-AIUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n    {\n        CFBundleURLName = \"GoogleSignIn\";\n        CFBundleURLSchemes = (\n            \"com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk\"\n        );\n    }\n)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benedikt.Erudit-AIUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -570,6 +622,79 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E55776B92EBA6FC4007AD72D /* XCRemoteSwiftPackageReference "EPUBKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/witekbobrowski/EPUBKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		E5B82AB52EA37C5500562498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+		E5D1096D2EA387A2008194AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		E5D109742EA38900008194AA /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E55776BA2EBA6FC4007AD72D /* EPUBKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55776B92EBA6FC4007AD72D /* XCRemoteSwiftPackageReference "EPUBKit" */;
+			productName = EPUBKit;
+		};
+		E5B82AB62EA37CD300562498 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B82AB52EA37C5500562498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E5B82AB82EA37CD300562498 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B82AB52EA37C5500562498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E5B82ABA2EA37CD300562498 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B82AB52EA37C5500562498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E5D1096E2EA387A2008194AA /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5D1096D2EA387A2008194AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E5D109702EA387A2008194AA /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5D1096D2EA387A2008194AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		E5D109752EA38900008194AA /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5D109742EA38900008194AA /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5B82A792EA375C800562498 /* Project object */;
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.554731795375-gd3mgpkaditm9jkb9q4da2tb5q8v27nk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBa29Zw2NEbIS4BZCrMXkL1RSywLcxkfE0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>554731795375</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.benedikt.Erudit-AI</string>
+	<key>PROJECT_ID</key>
+	<string>erudit-ai</string>
+	<key>STORAGE_BUCKET</key>
+	<string>erudit-ai.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:554731795375:ios:eac2d2b7889f59be77b55a</string>
+</dict>
+</plist>
